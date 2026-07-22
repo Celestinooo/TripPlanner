@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="trip_settings_title">Configurações</string>
+    <string name="trip_settings_subtitle">Preferências padrão para planejar suas viagens</string>
+    <string name="trip_settings_traveler_name">Nome do viajante</string>
+    <string name="trip_settings_name_placeholder">Seu nome</string>
+    <string name="trip_settings_currency">Moeda padrão</string>
+    <string name="trip_settings_change_photo">Alterar foto</string>
+    <string name="trip_currency">Moeda</string>
+    <string name="trip_app_subtitle">Suas viagens, destinos e orçamento</string>
+    <string name="trip_home">Home</string>
+    <string name="trip_trips_tab">Viagens</string>
+    <string name="trip_planned_trips">Viagens planejadas</string>
+    <string name="trip_travel">Viajar</string>
+    <string name="trip_config_short">Config</string>
+    <string name="trip_loading_destinations">Carregando destinos…</string>
+    <string name="trip_destinations_available">%1$d destinos disponíveis</string>
+    <string name="trip_budget_multiple_currencies">orçamentos em múltiplas moedas</string>
+    <string name="trip_budget_total">%1$s em orçamento</string>
+    <string name="trip_dashboard_subtitle">%1$d viagens · %2$d destinos · %3$s</string>
+    <string name="trip_recent_trips">Viagens recentes</string>
+    <string name="trip_active">Ativa</string>
+    <string name="trip_planned_status">Planejada</string>
+    <string name="trip_completed_status">Concluída</string>
+    <string name="trip_empty_trips">Nenhuma viagem ainda</string>
+    <string name="trip_empty_dashboard_body">Explore destinos para escolher a próxima viagem.</string>
+    <string name="trip_empty_dashboard_hint">Comece explorando destinos</string>
+    <string name="trip_discover_title">Descobrir</string>
+    <string name="trip_search_destinations">Pesquisar destinos…</string>
+    <string name="trip_destinations_error_title">Erro ao carregar destinos</string>
+    <string name="trip_destinations_error_body">Verifique a conexão</string>
+    <string name="trip_like">Curtir</string>
+    <string name="trip_name_label">Nome da viagem</string>
+    <string name="trip_period">Período</string>
+    <string name="trip_departure">Partida</string>
+    <string name="trip_return">Retorno</string>
+    <string name="trip_night">%1$d noite</string>
+    <string name="trip_nights">%1$d noites</string>
+    <string name="trip_budget_label">Orçamento (%1$s)</string>
+    <string name="trip_create">Criar viagem</string>
+    <string name="trip_my_trips">Minhas Viagens</string>
+    <string name="trip_one_planned">%1$d viagem planejada</string>
+    <string name="trip_many_planned">%1$d viagens planejadas</string>
+    <string name="trip_empty_trips_body">Escolha um destino na aba Descobrir para planejar sua próxima viagem.</string>
+    <string name="trip_cancel">Cancelar</string>
+    <string name="trip_back">Voltar</string>
+    <string name="trip_login_welcome">Bem-vindo ao TripPlanner</string>
+    <string name="trip_login_subtitle">Acesse seu planejador de viagens</string>
+    <string name="trip_login_password">Senha</string>
+    <string name="trip_login_email_button">Entrar com Email</string>
+    <string name="trip_login_or">ou</string>
+    <string name="trip_login_google">Continuar com Google</string>
+    <string name="trip_login_loading">Autenticando…</string>
+    <string name="trip_login_success">Bem-vindo, %1$s!</string>
+    <string name="trip_login_redirect">Redirecionando…</string>
+    <string name="trip_login_invalid">Credenciais inválidas. Use lucas@trip.com / trip123</string>
+    <string name="trip_activity">Atividade</string>
+    <string name="trip_expense">Despesa</string>
+    <string name="trip_trip">Viagem</string>
+    <string name="trip_itinerary">Itinerário</string>
+    <string name="trip_expenses">Despesas</string>
+    <string name="trip_notes">Notas</string>
+    <string name="trip_loading_trip">Carregando viagem…</string>
+    <string name="trip_day_time">Dia %1$d · %2$s</string>
+    <string name="trip_itinerary_header_summary">%1$d atividades · %2$d concluídas</string>
+    <string name="trip_expenses_header_summary">%1$d despesas · %2$s gastos</string>
+    <string name="trip_configure_trip">Configurar viagem</string>
+    <string name="trip_registered_summary">Resumo registrado</string>
+    <string name="trip_next_activities">Próximas atividades</string>
+    <string name="trip_recent_expenses">Despesas recentes</string>
+    <string name="trip_remove_trip">Remover viagem</string>
+    <string name="trip_edit_trip">Editar viagem</string>
+    <string name="trip_save_trip">Salvar viagem</string>
+    <string name="trip_destination">Destino</string>
+    <string name="trip_icon">Ícone</string>
+    <string name="trip_no_activity">Nenhuma atividade ainda</string>
+    <string name="trip_tap_add">Toque em + para adicionar</string>
+    <string name="trip_no_expense">Nenhuma despesa registrada</string>
+    <string name="trip_edit_activity">Editar atividade</string>
+    <string name="trip_new_activity">Nova atividade</string>
+    <string name="trip_activity_title">Título da atividade</string>
+    <string name="trip_date">Data</string>
+    <string name="trip_time">Horário</string>
+    <string name="trip_add_activity">Adicionar atividade</string>
+    <string name="trip_save_changes">Salvar alterações</string>
+    <string name="trip_edit_expense">Editar despesa</string>
+    <string name="trip_new_expense">Nova despesa</string>
+    <string name="trip_category">Categoria</string>
+    <string name="trip_value_label">Valor (%1$s)</string>
+    <string name="trip_description">Descrição</string>
+    <string name="trip_save_expense">Salvar despesa</string>
+    <string name="trip_register_expense">Registrar despesa</string>
+    <string name="trip_sensitive_info">Informações sensíveis</string>
+    <string name="trip_protected_trip_data">Dados protegidos da viagem</string>
+    <string name="trip_protect_vault">Proteger cofre</string>
+    <string name="trip_reveal_vault">Revelar cofre</string>
+    <string name="trip_delete">Excluir</string>
+    <string name="trip_remove">Remover</string>
+    <string name="trip_remove_activity">Remover atividade</string>
+    <string name="trip_remove_expense">Remover despesa</string>
+    <string name="trip_choose_time">Escolher horário</string>
+    <string name="trip_financial_summary">Resumo financeiro</string>
+    <string name="trip_revealed_content">Conteúdo revelado</string>
+    <string name="trip_settings_region">Região padrão</string>
+    <string name="trip_settings_language">Idioma</string>
+    <string name="trip_settings_language_system">Idioma do celular</string>
+    <string name="trip_settings_language_pt">Português</string>
+    <string name="trip_settings_language_en">Inglês</string>
+    <string name="trip_settings_notifications">Notificações</string>
+    <string name="trip_settings_save">SALVAR</string>
+    <string name="trip_settings_saved">Configurações salvas</string>
+    <string name="trip_settings_reset">Redefinir configurações</string>
+    <string name="trip_settings_clear">Limpar</string>
+    <string name="trip_settings_clear_title">Limpar configurações</string>
+    <string name="trip_settings_clear_body">Redefinir todas as preferências para os valores padrão?</string>
+    <string name="trip_region_default">Região padrão</string>
+    <string name="trip_region_all">Todas</string>
+    <string name="trip_region_all_value">Todas</string>
+    <string name="trip_region_americas">Américas</string>
+    <string name="trip_region_europe">Europa</string>
+    <string name="trip_region_asia">Ásia</string>
+    <string name="trip_region_africa">África</string>
+    <string name="trip_region_oceania">Oceania</string>
+    <string name="trip_expense_transport">Transporte</string>
+    <string name="trip_expense_lodging">Hospedagem</string>
+    <string name="trip_expense_food">Alimentação</string>
+    <string name="trip_expense_activity">Atividade</string>
+    <string name="trip_expense_shopping">Compras</string>
+    <string name="trip_expense_other">Outros</string>
+
+    <!-- Dashboard -->
+    <string name="trip_app_name">TripPlanner</string>
+    <string name="trip_budget_by_trip">Orçamento por Viagem</string>
+
+    <!-- TripDetail — delete trip dialog -->
+    <string name="trip_delete_trip_body">Remover \"%1$s\"? Todos os itinerários e despesas serão apagados.</string>
+
+    <!-- TripDetail — overview / itinerary -->
+    <string name="trip_itinerary_hint">Adicionar atividades e horários</string>
+    <string name="trip_activities_registered">%1$d atividades registradas</string>
+    <string name="trip_activities_empty">Nenhuma atividade cadastrada.</string>
+    <string name="trip_expenses_empty">Nenhuma despesa cadastrada.</string>
+    <string name="trip_day_format">Dia %1$d · %2$s</string>
+    <string name="trip_day_label">Dia %1$d</string>
+    <string name="trip_view_more">Ver mais</string>
+    <string name="trip_itinerary_transport">Transporte</string>
+    <string name="trip_itinerary_lodging">Hospedagem</string>
+    <string name="trip_itinerary_food">Alimentação</string>
+    <string name="trip_itinerary_activity">Atividade</string>
+    <string name="trip_itinerary_shopping">Compras</string>
+    <string name="trip_itinerary_other">Outro</string>
+
+    <!-- TripDetail — remove dialogs -->
+    <string name="trip_remove_item_body">Remover \"%1$s\"?</string>
+    <string name="trip_remove_expense_body">Remover %1$s %2$s?</string>
+
+    <!-- TripDetail — activity status / toggle -->
+    <string name="trip_activity_completed">Atividade marcada como concluída.</string>
+    <string name="trip_activity_pending">Atividade pendente.</string>
+    <string name="trip_mark_pending">Marcar como pendente</string>
+    <string name="trip_mark_complete">Marcar como concluída</string>
+
+    <!-- TripDetail — expense -->
+    <string name="trip_add_expense">Adicionar despesa</string>
+    <string name="trip_choose_photo">Escolher foto</string>
+    <string name="trip_remove_photo">Remover foto</string>
+    <string name="trip_photos">Fotos</string>
+    <string name="trip_crop_free_title">Crop livre</string>
+    <string name="trip_crop_free_hint">Arraste e use pinça para enquadrar a imagem antes de salvar.</string>
+    <string name="trip_crop_use_image">Usar imagem</string>
+
+    <!-- TripDetail — gallery -->
+    <string name="trip_gallery">Galeria</string>
+    <string name="trip_gallery_subtitle">Fotos e memórias desta viagem</string>
+    <string name="trip_gallery_empty">Nenhuma foto ainda</string>
+    <string name="trip_gallery_empty_hint">Toque aqui para adicionar a primeira foto da viagem</string>
+    <string name="trip_gallery_add_photo">Adicionar foto</string>
+    <string name="trip_gallery_edit_photo">Editar foto</string>
+    <string name="trip_gallery_add_photo_subtitle">Salve uma foto e associe a uma atividade se fizer sentido.</string>
+    <string name="trip_gallery_caption">Legenda</string>
+    <string name="trip_gallery_activity_optional">Atividade associada (opcional)</string>
+    <string name="trip_gallery_no_activity">Sem atividade associada</string>
+    <string name="trip_gallery_photo_count">%1$d foto(s) salvas</string>
+    <string name="trip_gallery_photo_without_caption">Foto da viagem</string>
+    <string name="trip_gallery_save_photo">Salvar foto</string>
+    <string name="trip_gallery_remove_photo">Remover foto</string>
+    <string name="trip_gallery_remove_photo_body">Remover esta foto da galeria da viagem?</string>
+    <string name="trip_gallery_profile_name">Portfólio da viagem</string>
+    <string name="trip_gallery_profile_handle">@portfolio.viagem</string>
+    <string name="trip_gallery_profile_bio">Pré-visualize a viagem como uma grade de fotos estilo Instagram.</string>
+    <string name="trip_gallery_posts">posts</string>
+    <string name="trip_gallery_grid_preview">Preview em grade</string>
+
+    <!-- TripDetail — budget feedback -->
+    <string name="trip_budget_warning">Atenção ao orçamento da viagem</string>
+    <string name="trip_budget_ok">Você ainda tem margem para gastar</string>
+
+    <!-- Discover — default trip name -->
+    <string name="trip_default_name">Viagem para %1$s</string>
+
+    <!-- Live screen -->
+    <string name="trip_live_title">Ao vivo</string>
+    <string name="trip_live_subtitle">Envie atualizações para dispositivos conectados</string>
+    <string name="trip_live_waiting">Aguardando participantes conectados.</string>
+    <string name="trip_live_clients_connected">%1$d cliente(s) conectado(s)</string>
+    <string name="trip_live_waiting_clients">Aguardando clientes</string>
+    <string name="trip_live_copy_hint">Toque para copiar o endereço</string>
+    <string name="trip_live_share_hint">Compartilhe este endereço com outro cliente na mesma rede para acompanhar mensagens em tempo real.</string>
+    <string name="trip_live_device">dispositivo</string>
+    <string name="trip_live_client">cliente</string>
+    <string name="trip_live_message_hint">Mensagem para a viagem…</string>
+
+    <!-- Common -->
+    <string name="trip_confirm">Confirmar</string>
+
+    <!-- TripDetail — overview metrics -->
+    <string name="trip_completed_count">%1$d concluídas</string>
+    <string name="trip_spent_label">Gasto</string>
+    <string name="trip_free_label">Livre</string>
+    <string name="trip_budget_short">Orçamento</string>
+    <string name="trip_free_amount">%1$s livres</string>
+
+    <!-- TripDetail — expenses overview -->
+    <string name="trip_register_expenses_hint">Registrar gastos da viagem</string>
+    <string name="trip_expenses_summary">%1$d despesas · %2$s gastos</string>
+</resources>

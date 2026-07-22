@@ -1,0 +1,31 @@
+# Built artifacts
+build/
+*.apk
+*.aab
+*.aar
+
+# Gradle wrapper (keep gradlew if present)
+.gradle/
+local.properties
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# Kotlin
+*.class
+*.kotlin_module
+
+# Generated
+gen/
+out/
+
+# Keystore
+*.jks
+*.keystore
+
+# Lint
+lint/
