@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base para a Activity. O Compose substitui a UI,
+         mas o sistema exige um tema de janela para splash e transições. -->
+    <style name="Theme.TripPlanner" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

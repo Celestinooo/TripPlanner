@@ -1,29 +1,10 @@
+// Root project — gerencia plugins para todos os subprojetos.
+// Nenhum módulo Android é configurado aqui.
 plugins {
-    alias(libs.plugins.portfolio.android.feature)
-    alias(libs.plugins.kotlin.serialization)
-}
-
-android {
-    namespace = "dev.lucas.portfolio.feature.tripplanner"
-}
-
-dependencies {
-    implementation(project(":core:network"))
-
-    implementation(libs.datastore.preferences)
-
-    implementation(libs.room.runtime)
-    implementation(libs.room.ktx)
-    ksp(libs.room.compiler)
-
-    implementation(libs.paging.runtime)
-    implementation(libs.paging.compose)
-
-    implementation(libs.coil.compose)
-    implementation(libs.coil.network.okhttp)
-
-    implementation(libs.kotlinx.serialization.json)
-    implementation(libs.retrofit.core)
-    implementation(libs.retrofit.kotlin.serialization)
-    implementation(libs.okhttp.core)
+    alias(libs.plugins.android.library)      apply false
+    alias(libs.plugins.android.application)  apply false
+    alias(libs.plugins.kotlin.android)       apply false
+    alias(libs.plugins.kotlin.serialization) apply false
+    alias(libs.plugins.ksp)                  apply false
+    alias(libs.plugins.hilt)                 apply false
 }

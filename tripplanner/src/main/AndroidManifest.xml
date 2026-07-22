@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Manifest do módulo biblioteca.
+    Activity, Application e permissões ficam no :app (standalone)
+    ou no app host do Portfolio.
+-->
+<manifest />
