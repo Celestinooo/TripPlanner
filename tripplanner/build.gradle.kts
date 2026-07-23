@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.ksp)
     alias(libs.plugins.hilt)
 }
@@ -16,10 +17,6 @@ android {
 
     buildFeatures {
         compose = true
-    }
-
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
 
     compileOptions {
@@ -84,4 +81,8 @@ dependencies {
 
     // Core
     implementation(libs.core.ktx)
+
+    // Core modules do host project
+    implementation(project(":core:designsystem"))
+    implementation(project(":core:common"))
 }
