@@ -1,8 +1,7 @@
 [versions]
 agp                   = "8.5.2"
-kotlin                = "1.9.24"
-ksp                   = "1.9.24-1.0.20"
-compose-compiler      = "1.5.14"
+kotlin                = "2.0.21"
+ksp                   = "2.0.21-1.0.28"
 compose-bom           = "2024.06.00"
 hilt                  = "2.52"
 room                  = "2.6.1"
@@ -77,3 +76,4 @@ kotlin-android       = { id = "org.jetbrains.kotlin.android",                  v
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization",     version.ref = "kotlin" }
 ksp                  = { id = "com.google.devtools.ksp",                       version.ref = "ksp" }
 hilt                 = { id = "com.google.dagger.hilt.android",                version.ref = "hilt" }
+compose-compiler     = { id = "org.jetbrains.kotlin.plugin.compose",           version.ref = "kotlin" }
