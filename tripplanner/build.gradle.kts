@@ -81,8 +81,4 @@ dependencies {
 
     // Core
     implementation(libs.core.ktx)
-
-    // Core modules do host project
-    implementation(project(":core:designsystem"))
-    implementation(project(":core:common"))
 }
