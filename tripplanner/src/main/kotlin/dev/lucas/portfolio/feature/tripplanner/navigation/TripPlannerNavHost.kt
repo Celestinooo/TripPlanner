@@ -22,6 +22,9 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
+import androidx.compose.foundation.isSystemInDarkTheme
+import dev.lucas.portfolio.feature.tripplanner.theme.LocalThemeMode
+import dev.lucas.portfolio.feature.tripplanner.theme.ThemeMode
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -136,13 +139,16 @@ private data class BottomTabHeader(
     val trailing: (@Composable () -> Unit)? = null,
 )
 
-private val TabIconBg          = Color(0xFF212121)
-private val TripsIconTint      = Color(0xFFFFC107)
-private val TripsIconBg        = TabIconBg
-private val DiscoverIconTint   = Color(0xFFFB8C00)
-private val DiscoverIconBg     = TabIconBg
-private val SettingsIconTint   = Color(0xFFE53935)
-private val SettingsIconBg     = TabIconBg
+private val TabIconBg               = Color(0xFF212121)
+
+private val TripsIconTintDark       = Color(0xFFFFC107)
+private val TripsIconTintLight      = Color(0xFFB45309)
+
+private val DiscoverIconTintDark    = Color(0xFFFB8C00)
+private val DiscoverIconTintLight   = Color(0xFFC2410C)
+
+private val SettingsIconTintDark    = Color(0xFFE53935)
+private val SettingsIconTintLight   = Color(0xFFB91C1C)
 
 private fun detailTrailing(
     galleryCount: Int?,
@@ -262,11 +268,21 @@ private fun DetailEditButton(onEdit: () -> Unit, contentDescription: String, tin
 }
 
 
-private fun tabColor(route: Any): Color = when (route) {
-    TripTrips -> TripsIconTint
-    TripDiscover -> DiscoverIconTint
-    TripSettings -> SettingsIconTint
-    else -> Color(0xFF9E9E9E)
+@Composable
+private fun tabColor(route: Any): Color {
+    val themeMode = LocalThemeMode.current
+    val systemDark = isSystemInDarkTheme()
+    val isDark = when (themeMode) {
+        ThemeMode.DARK   -> true
+        ThemeMode.LIGHT  -> false
+        ThemeMode.SYSTEM -> systemDark
+    }
+    return when (route) {
+        TripTrips    -> if (isDark) TripsIconTintDark    else TripsIconTintLight
+        TripDiscover -> if (isDark) DiscoverIconTintDark else DiscoverIconTintLight
+        TripSettings -> if (isDark) SettingsIconTintDark else SettingsIconTintLight
+        else         -> Color(0xFF9E9E9E)
+    }
 }
 
 @Composable
@@ -398,6 +414,17 @@ fun TripPlannerNavHost(onBack: () -> Unit) {
     var scrollToTopSignal by remember { mutableIntStateOf(0) }
     var discoverRefreshAction by remember { mutableStateOf<DiscoverRefreshAction?>(null) }
 
+    val themeMode = LocalThemeMode.current
+    val systemDark = isSystemInDarkTheme()
+    val isDark = when (themeMode) {
+        ThemeMode.DARK   -> true
+        ThemeMode.LIGHT  -> false
+        ThemeMode.SYSTEM -> systemDark
+    }
+    val tripsColor    = if (isDark) TripsIconTintDark    else TripsIconTintLight
+    val discoverColor = if (isDark) DiscoverIconTintDark else DiscoverIconTintLight
+    val settingsColor = if (isDark) SettingsIconTintDark else SettingsIconTintLight
+
     val showBottomBar = bottomNavItems.any { item ->
             currentDest?.hierarchy?.any { it.hasRoute(item.route::class) } == true
         }
@@ -441,10 +468,10 @@ fun TripPlannerNavHost(onBack: () -> Unit) {
             subtitle = discoverDestinationCount?.let { stringResource(R.string.trip_destinations_available, it) }
                 ?: stringResource(R.string.trip_loading_destinations),
             iconEntrance = tabClickIconEntrance(pendingTabIconAnimation.takeIf { it == TripDiscover }),
-            iconTint = DiscoverIconTint,
-            iconContainer = DiscoverIconBg,
+            iconTint = discoverColor,
+            iconContainer = TabIconBg,
             trailing = discoverRefreshAction?.let { action ->
-                { DiscoverRefreshButton(action = action, tint = DiscoverIconTint) }
+                { DiscoverRefreshButton(action = action, tint = discoverColor) }
             },
         )
         currentDest?.hierarchy?.any { it.hasRoute(TripTrips::class) } == true -> BottomTabHeader(
@@ -453,8 +480,8 @@ fun TripPlannerNavHost(onBack: () -> Unit) {
             title = stringResource(R.string.trip_my_trips),
             subtitle = stringResource(R.string.trip_planned_trips),
             iconEntrance = tabClickIconEntrance(pendingTabIconAnimation.takeIf { it == TripTrips }),
-            iconTint = TripsIconTint,
-            iconContainer = TripsIconBg,
+            iconTint = tripsColor,
+            iconContainer = TabIconBg,
         )
         currentDest?.isTripDetailFamily() == true -> {
             val detailHeader = tripDetailHeaderState(
@@ -465,14 +492,14 @@ fun TripPlannerNavHost(onBack: () -> Unit) {
                 totalSpent = headerTotalSpent,
                 galleryCount = headerGalleryCount,
             )
-            val accent = detailHeader.iconColor ?: TripsIconTint
+            val accent = detailHeader.iconColor ?: tripsColor
             BottomTabHeader(
                 animationKey = detailHeader.animationKey,
                 icon = detailHeader.icon,
                 title = detailHeader.title,
                 subtitle = detailHeader.subtitle,
                 iconTint = accent,
-                iconContainer = TripsIconBg,
+                iconContainer = TabIconBg,
                 onBack = { navController.popBackStack() },
                 trailing = detailTrailing(
                     galleryCount = detailHeader.galleryCount,
@@ -488,8 +515,8 @@ fun TripPlannerNavHost(onBack: () -> Unit) {
             title = stringResource(R.string.trip_settings_title),
             subtitle = stringResource(R.string.trip_settings_subtitle),
             iconEntrance = tabClickIconEntrance(pendingTabIconAnimation.takeIf { it == TripSettings }),
-            iconTint = SettingsIconTint,
-            iconContainer = SettingsIconBg,
+            iconTint = settingsColor,
+            iconContainer = TabIconBg,
         )
         else -> null
     }
